@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ---------- Meta Information ---------- -->
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, viewport-fit=cover"
+    >
+
+    <meta
+        name="color-scheme"
+        content="light"
+    >
+
+    <title>Smart Campus Hub</title>
+
+    <!-- ---------- Stylesheets ---------- -->
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/tables.css">
+    <link rel="stylesheet" href="css/overlays.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/polish.css">
+    <link rel="stylesheet" href="css/revisions.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body>
+    <!-- ---------- Application Root ---------- -->
+
+    <div id="root">
+        <div id="boot">
+            Loading Smart Campus Hub…
+
+            If this message stays, JavaScript is disabled or
+            css/ and js/ folders are missing next to index.html
+            (use smart-campus-hub-standalone.html instead).
+        </div>
+    </div>
+
+    <!-- ---------- Toast Notifications ---------- -->
+
+    <div
+        id="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+ 
+
+    <!-- ---------- Core Helpers ---------- -->
+
+    <script src="js/core/helpers.js"></script>
+
+    <!-- ---------- Data Management ---------- -->
+
+    <script src="js/data/master-data.js"></script>
+    <script src="js/data/seed.js"></script>
+    <script src="js/data/maintenance.js"></script>
+
+    <!-- ---------- UI Components ---------- -->
+
+    <script src="js/ui/table-modal.js"></script>
+
+    <!-- ---------- Shared Pages ---------- -->
+
+    <script src="js/pages/shared/options.js"></script>
+    <script src="js/pages/shared/enrollment-view.js"></script>
+    <script src="js/pages/shared/announcements.js"></script>
+    <script src="js/pages/shared/service-requests.js"></script>
+
+    <!-- ---------- Admin Pages ---------- -->
+
+    <script src="js/pages/admin/dashboard.js"></script>
+    <script src="js/pages/admin/profile.js"></script>
+    <script src="js/pages/admin/students.js"></script>
+    <script src="js/pages/admin/student-detail.js"></script>
+    <script src="js/pages/admin/faculty.js"></script>
+    <script src="js/pages/admin/faculty-detail.js"></script>
+    <script src="js/pages/admin/announcements.js"></script>
+    <script src="js/pages/admin/announcement-form.js"></script>
+    <script src="js/pages/admin/service-requests.js"></script>
+    <script src="js/pages/admin/reports.js"></script>
+    <script src="js/pages/admin/maintenance.js"></script>
+
+    <!-- ---------- Faculty Pages ---------- -->
+
+    <script src="js/pages/faculty/dashboard.js"></script>
+    <script src="js/pages/faculty/profile.js"></script>
+    <script src="js/pages/faculty/workload.js"></script>
+
+    <!-- ---------- Student Pages ---------- -->
+
+    <script src="js/pages/student/dashboard.js"></script>
+    <script src="js/pages/student/profile.js"></script>
+    <script src="js/pages/student/enrollment.js"></script>
+
+    <!-- ---------- Page Registry ---------- -->
+
+    <script src="js/pages/registry.js"></script>
+
+    <!-- ---------- Application Core ---------- -->
+
+    <script src="js/core/shell.js"></script>
+    <script src="js/core/actions.js"></script>
+
+    <!-- ---------- Application Entry Point (Load Last) ---------- -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

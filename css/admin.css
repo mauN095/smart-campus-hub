@@ -1,0 +1,36 @@
+/* admin revisions */
+#aterm,
+#term,
+#fterm,
+#wterm {
+    width: 50%;
+    min-width: 240px;
+}
+
+label select[disabled] {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.es.adm {
+    padding: 16px 22px;
+    border-left: 4px solid var(--line);
+}
+
+.es.adm.okb {
+    border-left-color: var(--green);
+}
+
+.es.adm .eb {
+    margin: 0 0 4px;
+}
+
+.es.adm .big {
+    margin: 0;
+}
+
+.eh {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}

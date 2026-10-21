@@ -1,0 +1,73 @@
+/* Login / forgot password screen */
+
+/* login */
+.login {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    padding-top: 0;
+}
+
+.lb {
+    background: #0A2049;
+    color: #fff;
+    padding: 36px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.lb h2 {
+    font-size: 34px;
+    margin: 50px 0 10px;
+    max-width: 420px;
+}
+
+.lb p {
+    color: #B9CCF5;
+    max-width: 360px;
+}
+
+.lb > svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.lbr {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.lbr .lg {
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    color: var(--navy);
+}
+
+.lf {
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.lc {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 28px;
+    width: min(420px, 100%);
+}
+
+body.in-login .tb {
+    display: none;
+}
+
+body.in-login .app {
+    padding-top: 0;
+}

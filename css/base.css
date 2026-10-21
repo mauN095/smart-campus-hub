@@ -1,0 +1,127 @@
+/* Base: design tokens (:root), reset, typography */
+
+:root {
+    --navy: #0B1F4B;
+    --ink: #0F172A;
+    --mut: #64748B;
+    --line: #E8ECF4;
+    --bg: #F4F6FB;
+    --blue: #2563EB;
+    --green: #166534;
+    --amber: #92400E;
+    --red: #B91C1C;
+    --sb: #173B66;
+    --acc: #2563EB
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    margin: 0
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    font-size: 14px
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit
+}
+
+h1 {
+    font-size: 26px;
+    margin: 0
+}
+
+h2 {
+    margin: 0 0 6px;
+    font-size: 20px
+}
+
+h3 {
+    margin: 0 0 12px;
+    font-size: 16px
+}
+
+main > h3 {
+    margin: 24px 0 12px
+}
+
+main > .top + h3,
+main > .top:first-child + h3 {
+    margin-top: 8px
+}
+
+.kcols {
+    display: grid;
+    gap: 24px
+}
+
+.kcol {
+    display: flex;
+    flex-direction: column;
+    gap: 22px
+}
+
+.kg3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px 24px
+}
+
+.ev {
+    display: flex;
+    align-items: center;
+    gap: 14px
+}
+
+.ev .lk {
+    min-width: 150px;
+    text-align: left
+}
+
+.ev .ed {
+    padding: 2px
+}
+
+.nw {
+    white-space: nowrap
+}
+
+#term {
+    max-width: 520px
+}
+
+.bar .search {
+    flex: 1 1 220px;
+    min-width: 0;
+    max-width: 340px
+}
+
+.eb {
+    margin: 0 0 8px
+}
+
+.mu {
+    color: var(--mut)
+}
+
+.lk {
+    color: var(--acc);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0
+}

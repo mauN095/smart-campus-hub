@@ -1,0 +1,728 @@
+/* revision: spacing, photo, faculty detail, login art, responsive */
+:root {
+    --pad: 20px 24px;
+}
+
+main {
+    padding: 24px 28px 40px;
+}
+
+.c {
+    padding: var(--pad);
+}
+
+.c.tw {
+    padding: 0;
+}
+
+.es {
+    padding: var(--pad);
+}
+
+.c h3 {
+    margin: 0 0 6px;
+}
+
+.rw,
+.li {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 0;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+}
+
+.c > h3 + .rw,
+.c > h3 + .li,
+#annl > .li:first-child {
+    border-top: 0;
+}
+
+#annl {
+    padding: 6px 24px;
+}
+
+#annl .li:first-child {
+    padding-top: 12px;
+}
+
+#annl .li:last-child {
+    padding-bottom: 12px;
+}
+
+.c > .rw:last-child,
+.c > .rs:last-child {
+    padding-bottom: 2px;
+}
+
+.pf {
+    gap: 20px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.pf .pi {
+    min-width: 0;
+}
+
+.pf h2 {
+    margin: 0 0 6px;
+}
+
+.av {
+    position: relative;
+    overflow: hidden;
+}
+
+.av img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pc {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.btn.sm {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+.fd-h {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.fd-h .av {
+    width: 64px;
+    height: 64px;
+    font-size: 18px;
+}
+
+.top .l {
+    min-width: 0;
+    flex-wrap: wrap;
+}
+
+.top h1 {
+    overflow-wrap: anywhere;
+}
+
+.lb {
+    display: flex;
+    flex-direction: column;
+    padding: 36px 36px 0;
+}
+
+.lb .lbr {
+    flex: none;
+}
+
+.lb h2 {
+    margin: 40px 0 10px;
+}
+
+.lart {
+    position: relative;
+    flex: 1;
+    min-height: 260px;
+    margin: 40px -36px 0;
+}
+
+.lart svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.lb > svg {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    body.in-login .tb {
+        display: none;
+    }
+
+    .login {
+        display: block;
+        padding-top: 0;
+    }
+
+    .lb {
+        display: flex;
+        min-height: 460px;
+        padding: 28px 24px 0;
+    }
+
+    .lart {
+        margin: 28px -24px 0;
+        min-height: 220px;
+    }
+
+    .lb h2 {
+        margin-top: 32px;
+    }
+
+    .lf {
+        padding: 28px 16px 40px;
+    }
+
+    .lc {
+        padding: 28px 24px;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 820px) {
+    main {
+        padding: 18px 14px 32px;
+    }
+
+    .c,
+    .es {
+        --pad: 16px;
+    }
+
+    .kg3.d {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #annl {
+        padding: 4px 16px;
+    }
+
+    .top .btn {
+        white-space: nowrap;
+    }
+
+    .tt {
+        padding: 10px 12px;
+    }
+
+    th,
+    td {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pf {
+        gap: 14px;
+    }
+
+    .av {
+        width: 64px;
+        height: 64px;
+        font-size: 18px;
+    }
+
+    .fd-h {
+        align-items: flex-start;
+    }
+
+    .kg3.d {
+        grid-template-columns: 1fr;
+    }
+
+    .lb {
+        min-height: 400px;
+    }
+
+    .lb h2 {
+        font-size: 26px;
+    }
+
+    .lart {
+        min-height: 190px;
+    }
+}
+
+/* revision 2: roomier spacing, login responsive, profile row */
+:root {
+    --pad: 24px 28px;
+}
+
+main {
+    padding: 32px 32px 48px;
+}
+
+.top {
+    margin-bottom: 20px;
+    gap: 14px;
+}
+
+.bar {
+    margin-bottom: 20px;
+}
+
+.pills {
+    gap: 10px;
+}
+
+.g2,
+.g3,
+.g4 {
+    gap: 20px;
+}
+
+.c {
+    margin-bottom: 20px;
+}
+
+.c h3 {
+    margin: 0 0 10px;
+}
+
+.c .eb {
+    margin: 0 0 12px;
+}
+
+.c .big {
+    margin: 8px 0 12px;
+}
+
+.c p.mu {
+    margin: 0 0 14px;
+    line-height: 1.5;
+}
+
+.c .lk {
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.rw,
+.li {
+    padding: 16px 0;
+    line-height: 1.4;
+}
+
+.rw small,
+.li small {
+    margin-bottom: 6px;
+}
+
+#annl {
+    padding: 8px 28px;
+}
+
+#annl .li:first-child {
+    padding-top: 16px;
+}
+
+#annl .li:last-child {
+    padding-bottom: 16px;
+}
+
+.rs {
+    padding: 14px 0;
+    line-height: 1.4;
+}
+
+.pf,
+.pf {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.pf h2 {
+    margin: 0 0 8px;
+}
+
+@media (max-width: 1024px) {
+    body.in-login .tb {
+        display: flex;
+    }
+
+    .login {
+        display: block;
+        padding-top: calc(48px + env(safe-area-inset-top, 0px));
+        min-height: 100vh;
+    }
+
+    .lb {
+        display: none;
+    }
+
+    .lf {
+        padding: 32px 16px 40px;
+    }
+
+    .lc {
+        padding: 32px 28px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 820px) {
+    main {
+        padding: 28px 16px 36px;
+    }
+
+    :root {
+        --pad: 20px 20px;
+    }
+
+    .pf {
+        flex-direction: row !important;
+        align-items: center !important;
+    }
+
+    .c .big {
+        font-size: 20px;
+        margin: 6px 0 10px;
+    }
+
+    .c .eb {
+        margin-bottom: 10px;
+    }
+
+    .c p.mu {
+        margin-bottom: 12px;
+    }
+
+    .g2,
+    .g3,
+    .g4 {
+        gap: 16px;
+    }
+
+    .c {
+        margin-bottom: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .rw,
+    .li {
+        padding: 14px 0;
+    }
+
+    #annl {
+        padding: 4px 20px;
+    }
+
+    .bar {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .g4 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .g4 .big {
+        font-size: 20px;
+    }
+
+    .lc {
+        padding: 28px 20px;
+    }
+
+    .pf {
+        gap: 14px;
+    }
+
+    .pf h2 {
+        font-size: 18px;
+    }
+}
+
+/* revision 3: balanced spacing */
+:root {
+    --pad: 20px 24px;
+}
+
+main {
+    padding: 28px 28px 40px;
+}
+
+.top {
+    margin-bottom: 16px;
+}
+
+.bar {
+    margin-bottom: 16px;
+}
+
+.pills {
+    gap: 8px;
+}
+
+.g2,
+.g3,
+.g4 {
+    gap: 16px;
+}
+
+.c {
+    margin-bottom: 16px;
+}
+
+.c h3 {
+    margin: 0 0 8px;
+}
+
+.c .eb {
+    margin: 0 0 8px;
+}
+
+.c .big {
+    margin: 6px 0 8px;
+}
+
+.c p.mu {
+    margin: 0 0 10px;
+    line-height: 1.45;
+}
+
+.c .lk {
+    margin-top: 0;
+}
+
+.rw,
+.li {
+    padding: 12px 0;
+    line-height: 1.35;
+}
+
+.rw small,
+.li small {
+    margin-bottom: 3px;
+}
+
+#annl {
+    padding: 4px 24px;
+}
+
+#annl .li:first-child {
+    padding-top: 12px;
+}
+
+#annl .li:last-child {
+    padding-bottom: 12px;
+}
+
+.rs {
+    padding: 11px 0;
+}
+
+.pf h2 {
+    margin: 0 0 6px;
+}
+
+@media (max-width: 1024px) {
+    .lf {
+        padding: 48px 16px 40px;
+    }
+
+    .lc {
+        padding: 28px 24px;
+    }
+}
+
+@media (max-width: 820px) {
+    main {
+        padding: 24px 16px 32px;
+    }
+
+    :root {
+        --pad: 18px 18px;
+    }
+
+    .c .big {
+        margin: 4px 0 8px;
+    }
+
+    .g2,
+    .g3,
+    .g4 {
+        gap: 14px;
+    }
+
+    .c {
+        margin-bottom: 14px;
+    }
+
+    .rw,
+    .li {
+        padding: 11px 0;
+    }
+
+    #annl {
+        padding: 2px 18px;
+    }
+
+    .bar {
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lf {
+        padding: 40px 14px 32px;
+    }
+
+    .lc {
+        padding: 24px 18px;
+    }
+}
+
+/* revision 4: smaller, comfortable type scale */
+body {
+    font-size: 13px;
+}
+
+h1 {
+    font-size: 23px;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.big,
+.c .big {
+    font-size: 19px;
+}
+
+.eb {
+    font-size: 10.5px;
+}
+
+.rw small,
+.li small {
+    font-size: 10.5px;
+}
+
+.rw b,
+.li b {
+    font-size: 13.5px;
+    font-weight: 700;
+}
+
+.kv b {
+    font-size: 13px;
+}
+
+.kv span {
+    font-size: 11.5px;
+}
+
+th,
+td {
+    font-size: 12.5px;
+}
+
+th {
+    font-size: 12px;
+}
+
+.tt,
+.tf {
+    font-size: 11.5px;
+}
+
+label {
+    font-size: 12.5px;
+}
+
+.btn {
+    font-size: 13px;
+}
+
+.btn.sm {
+    font-size: 12px;
+}
+
+label input,
+label select,
+label textarea,
+.search,
+.sel {
+    font-size: 13px;
+}
+
+.sb button {
+    font-size: 13px;
+}
+
+.tb b {
+    font-size: 15px;
+}
+
+.pf h2 {
+    font-size: 17px;
+}
+
+.md h2 {
+    font-size: 17px;
+}
+
+.lc h2 {
+    font-size: 24px;
+}
+
+.lb h2 {
+    font-size: clamp(22px, 2.4vw, 30px);
+}
+
+.lbr {
+    font-size: 18px;
+}
+
+.pl {
+    font-size: 12.5px;
+}
+
+@media (max-width: 1024px) {
+    .lc h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 820px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .big,
+    .c .big {
+        font-size: 18px;
+    }
+
+    .rw b,
+    .li b {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .lb h2 {
+        font-size: 22px;
+    }
+
+    .pf h2 {
+        font-size: 16px;
+    }
+}
